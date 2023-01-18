@@ -23,4 +23,8 @@ public class HelperBase {
         wd.findElement(locator).click();
     }
 
+    public void pause(int time) throws InterruptedException {
+        Thread.sleep(time);
+    }
+
 }

@@ -1,5 +1,6 @@
 package tests;
 
+import model.User;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -13,7 +14,17 @@ public class LoginTests extends TestBase {
             app.getHelperUser().logout();
         }
     }
+    @Test
+    public void loginSuccessModel() throws InterruptedException {
+        User user = new User().withEmail("teddy1@gmail.com").withPassword("Teddy1206$");
 
+        app.getHelperUser().openLoginRegistrationForm();
+        app.getHelperUser().fillLoginRegistrationForm(user);
+        Thread.sleep(2000);
+        app.getHelperUser().submitLogin();
+        Assert.assertTrue(app.getHelperUser().isLogged());
+        //logout
+    }
     @Test
     public void loginSuccess() throws InterruptedException {
 
