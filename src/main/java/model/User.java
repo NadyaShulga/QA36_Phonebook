@@ -1,10 +1,19 @@
 package model;
 
+import lombok.Builder;
+import lombok.Getter;
+import lombok.Setter;
+import lombok.ToString;
+
+@Setter
+@Getter
+@ToString
+@Builder
 public class User{
     private String email;
     private String password;
 
-    public User withEmail(String email) {
+   /* public User withEmail(String email) {
         this.email = email;
         return this;
     }
@@ -28,7 +37,7 @@ public class User{
                 "email='" + email + '\'' +
                 ", password='" + password + '\'' +
                 '}';
-    }
+    }*/
 }
 
 

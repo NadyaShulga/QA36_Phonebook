@@ -16,8 +16,8 @@ public class LoginTests extends TestBase {
     }
     @Test
     public void loginSuccessModel() throws InterruptedException {
-        User user = new User().withEmail("teddy1@gmail.com").withPassword("Teddy1206$");
-
+       User user = User.builder().build();
+        // User user = new User().withEmail("teddy1@gmail.com").withPassword("Teddy1206$");
         app.getHelperUser().openLoginRegistrationForm();
         app.getHelperUser().fillLoginRegistrationForm(user);
         Thread.sleep(2000);
