@@ -1,0 +1,36 @@
+17:42:13.702  INFO  manager.ApplicationManager - All tests star in Chrome Browser
+17:42:14.575  INFO  manager.ApplicationManager - Current Url -->https://telranedu.web.app/home
+17:42:14.611  INFO  tests.TestBase - The name of starts method is --->loginSuccess
+17:42:14.614  INFO  manager.ListenerWD - Before find elements  --> By.xpath: //*[text()='Sign Out']
+17:42:19.678  INFO  manager.ListenerWD - After find elements  --> By.xpath: //*[text()='Sign Out']
+17:42:19.680  INFO  manager.ListenerWD - List size is  --> 0
+17:42:19.682  INFO  tests.TestBase - Login with valid data: email:'teddy1@gmail.com'  and password 'Teddy1206$'
+17:42:19.683  INFO  manager.ListenerWD - Before find element  --> By.cssSelector: a[href='/l']
+17:42:24.750  INFO  manager.ListenerWD - Tests ends with error
+17:42:24.750  INFO  manager.ListenerWD - -------------------------------------------------
+17:42:24.751  INFO  manager.ListenerWD - Method methodfindElement
+17:42:24.751  INFO  manager.ListenerWD - -------------------------------------------------
+17:42:24.753  INFO  manager.ListenerWD - InvocationTargetException getTargetExceptionorg.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"a[href='/l']"}
+  (Session info: chrome=109.0.5414.120)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.7.1', revision: 'c6795baf1a3'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.17'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [019e5c390260130b233e9cfc96b859df, findElement {using=css selector, value=a[href='/l']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\shulg\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57561}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57561/devtoo..., se:cdpVersion: 109.0.5414.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 019e5c390260130b233e9cfc96b859df
+17:42:24.755  INFO  manager.ListenerWD - -------------------------------------------------
+17:42:24.756  INFO  manager.ListenerWD - InvocationTargetException getMessagenull
+17:42:24.756  INFO  manager.ListenerWD - -------------------------------------------------
+17:42:24.757  INFO  manager.ListenerWD - InvocationTargetException getCauseorg.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"a[href='/l']"}
+  (Session info: chrome=109.0.5414.120)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.7.1', revision: 'c6795baf1a3'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.17'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [019e5c390260130b233e9cfc96b859df, findElement {using=css selector, value=a[href='/l']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\shulg\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57561}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57561/devtoo..., se:cdpVersion: 109.0.5414.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 019e5c390260130b233e9cfc96b859df
+17:42:24.758  INFO  manager.ListenerWD - -------------------------------------------------
+17:42:24.758  INFO  manager.ListenerWD - Object targetChromeDriver: chrome on WINDOWS (019e5c390260130b233e9cfc96b859df)
+17:42:24.758  INFO  manager.ListenerWD - -------------------------------------------------

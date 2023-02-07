@@ -2,33 +2,26 @@ package tests;
 
 import model.Contact;
 import model.User;
-import org.checkerframework.checker.units.qual.C;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-
-import java.util.List;
 import java.util.Random;
 
 public class AddContactTests extends TestBase {
 
-    @BeforeMethod
+    @BeforeMethod(alwaysRun = true)
     public void preCondition() {
         if (!app.getHelperUser().isLogged())
         {
-            //app.getHelperUser().login(new User().withEmail("teddy1@gmail.com").withPassword("Teddy1206$"));
             app.getHelperUser().login(User.builder().email("teddy1@gmail.com").password("Teddy1206$").build());
             // Lombok
         }
     }
     @Test
-    public void addNewContactSuccessAllFields() throws InterruptedException {
+    public void addNewContactSuccessAllFields()  {
 
         Random random = new Random();
         int i = random.nextInt(1000) + 1000;
-        //Contact contact = Contact.builder()
         Contact contact = Contact.builder()  //lombok
                 .name("Tom" + i)
                 .lastName("Chan")
@@ -38,25 +31,24 @@ public class AddContactTests extends TestBase {
                 .description("friend")
                 .build();
         System.out.println(contact.toString());
+        logger.info("Tests start with data : " +contact.toString());
 
         app.getHelperContact().openAddContactForm();
         app.getHelperContact().fillAddContactForm(contact);
         app.getHelperContact().submitAddContactForm();
 
+
         Assert.assertTrue(app.getHelperContact().isContactAddedByName(contact.getName()));
         Assert.assertTrue(app.getHelperContact().isContactAddedByPhone(contact.getPhone()));
-        // Assert.assertTrue(app.getHelperContact().isContactAddedByEmail(contact.getEmail()));
+        Assert.assertTrue(app.getHelperContact().isContactAddedByEmail(contact.getEmail()));
 
-        //Assert.assertEquals(contact.getName(),app.getHelperContact().getCardName());
-        //Assert.assertEquals(contact.getPhone(),app.getHelperContact().getCardPhone());
     }
 
-    @Test
+    @Test(groups = {"smoke"})
     public void addNewContactSuccessRequiredFields() {
 
         Random random = new Random();
         int i = random.nextInt(1000) + 1000;
-        //Contact contact = Contact.builder()
         Contact contact = Contact.builder()  //lombok
                 .name("Paula" + i)
                 .lastName("Moro")
@@ -64,84 +56,88 @@ public class AddContactTests extends TestBase {
                 .email("paula" + i + "@gmail.com")
                 .address("USA")
                 .build();
-        // System.out.println(contact.toString());
+         System.out.println(contact.toString());
         app.getHelperContact().openAddContactForm();
         app.getHelperContact().fillAddContactForm(contact);
         app.getHelperContact().submitAddContactForm();
 
         Assert.assertTrue(app.getHelperContact().isContactAddedByName(contact.getName()));
         Assert.assertTrue(app.getHelperContact().isContactAddedByPhone(contact.getPhone()));
-        // Assert.assertTrue(app.getHelperContact().isContactAddedByEmail(contact.getEmail()));
+        Assert.assertTrue(app.getHelperContact().isContactAddedByEmail(contact.getEmail()));
     }
 
     @Test
-    public void addNewContactNameNegative() {
-        Random random = new Random();
-        int i = random.nextInt(1000) + 1000;
+    public void addNewContactWrongName() {
         Contact contact = Contact.builder()  //lombok
-                .name(null)
+                .name("")
                 .lastName("Moro")
-                .phone("192936" + i)
-                .email("paula" + i + "@gmail.com")
+                .phone("1111111333")
+                .email("luck@gmail.com")
                 .address("USA")
+                .description("wrong name")
                 .build();
         System.out.println(contact.toString());
+
         app.getHelperContact().openAddContactForm();
         app.getHelperContact().fillAddContactForm(contact);
         app.getHelperContact().submitAddContactForm();
-        Assert.assertTrue((app.getHelperContact().isButtonAddOnPage(contact)));
+        Assert.assertTrue(app.getHelperContact().issAddPageStillDisplayed());
     }
 
     @Test
-    public void addNewContactLastNameNegative() {
-        Random random = new Random();
-        int i = random.nextInt(1000) + 1000;
+    public void addNewContactWrongLastName() {
+
         Contact contact = Contact.builder()  //lombok
-                .name("Rick" + i)
-                .lastName(null)
-                .phone("192936" + i)
-                .email("paula" + i + "@gmail.com")
+                .name("Rick")
+                .lastName("")
+                .phone("1929361234567")
+                .email("rick@gmail.com")
                 .address("USA")
+                .description("wrong last name")
                 .build();
         System.out.println(contact.toString());
         app.getHelperContact().openAddContactForm();
         app.getHelperContact().fillAddContactForm(contact);
         app.getHelperContact().submitAddContactForm();
-        Assert.assertTrue((app.getHelperContact().isButtonAddOnPage(contact)));
+
+        Assert.assertTrue(app.getHelperContact().issAddPageStillDisplayed());
     }
 
     @Test
-    public void addNewContactPhoneNegative() throws InterruptedException {
-        Random random = new Random();
-        int i = random.nextInt(1000) + 1000;
+    public void addNewContactWrongPhone()  {
+
         Contact contact = Contact.builder()  //lombok
-                .name("Rick" + i)
+                .name("Rick")
                 .lastName("Frost")
-                .phone("102938475600000"+i)
-                .email("paula" + i + "@gmail.com")
+                .phone("1029")
+                .email("paula@gmail.com")
                 .address("USA")
+                .description("wrong phone")
                 .build();
         System.out.println(contact.toString());
         app.getHelperContact().openAddContactForm();
         app.getHelperContact().fillAddContactForm(contact);
         app.getHelperContact().submitAddContactForm();
-        Assert.assertEquals(app.getHelperContact().isAlertFormIsDisplayed(), " Phone not valid: Phone number must contain only digits! And length min 10, max 15!");
+
+        Assert.assertTrue(app.getHelperContact().issAddPageStillDisplayed());
+        Assert.assertTrue(app.getHelperUser().isErrorMessageDisplayed(" Phone not valid: Phone number must contain only digits! And length min 10, max 15!"));
     }
     @Test
-    public void addNewContactEmailNegative() throws InterruptedException {
-        Random random = new Random();
-        int i = random.nextInt(1000) + 1000;
+    public void addNewContactWrongEmail() {
         Contact contact = Contact.builder()  //lombok
-                .name("Rick" + i)
+                .name("Rick" )
                 .lastName("Frost")
-                .phone("102938"+i)
-                .email("paula" + i + "gmail.com")
+                .phone("1029388765432")
+                .email("paulagmail.com")
                 .address("USA")
+                .description("wrong email")
                 .build();
         System.out.println(contact.toString());
         app.getHelperContact().openAddContactForm();
         app.getHelperContact().fillAddContactForm(contact);
         app.getHelperContact().submitAddContactForm();
-        Assert.assertEquals(app.getHelperContact().isAlertFormIsDisplayed(), "Email not valid: must be a well-formed email address");
+
+        Assert.assertTrue(app.getHelperContact().issAddPageStillDisplayed());
+        Assert.assertTrue(app.getHelperUser().isErrorMessageDisplayed("Email not valid: must be a well-formed email address"));
     }
 }

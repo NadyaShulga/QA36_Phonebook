@@ -1,0 +1,24 @@
+13:28:50.609  INFO  manager.ApplicationManager - All tests star in Chrome Browser
+13:28:51.260  INFO  manager.ApplicationManager - Current Url -->https://telranedu.web.app/home
+13:28:51.262  INFO  manager.ListenerTNG - onStart---->Nopackage
+13:28:51.292  INFO  tests.TestBase - The name of starts method is --->registrationSuccess
+13:28:51.293  INFO  manager.ListenerWD - Before find elements  --> By.xpath: //*[text()='Sign Out']
+13:28:56.366  INFO  manager.ListenerWD - After find elements  --> By.xpath: //*[text()='Sign Out']
+13:28:56.369  INFO  manager.ListenerWD - List size is  --> 0
+13:28:56.369  INFO  manager.ListenerTNG - onTestStart---->registrationSuccess
+13:28:56.369  INFO  tests.TestBase - Registration with valid data: email:'dom" + i + "@gmail.com'  and password 'Tima1206$'
+13:28:56.369  INFO  manager.ListenerWD - Before find element  --> By.cssSelector: a[href='/login']
+13:28:56.385  INFO  manager.ListenerWD - After find element  --> By.cssSelector: a[href='/login']
+13:28:56.445  INFO  manager.ListenerWD - Before find element  --> By.cssSelector: input[placeholder='Email']
+13:28:56.461  INFO  manager.ListenerWD - After find element  --> By.cssSelector: input[placeholder='Email']
+13:28:56.576  INFO  manager.ListenerWD - Before find element  --> By.cssSelector: input[placeholder='Password']
+13:28:56.593  INFO  manager.ListenerWD - After find element  --> By.cssSelector: input[placeholder='Password']
+13:28:58.684  INFO  manager.ListenerWD - Before find element  --> By.cssSelector: [name='registration']
+13:28:58.700  INFO  manager.ListenerWD - After find element  --> By.cssSelector: [name='registration']
+13:28:58.734  INFO  manager.ListenerWD - Before find elements  --> By.xpath: //*[text()='Sign Out']
+13:28:59.073  INFO  manager.ListenerWD - After find elements  --> By.xpath: //*[text()='Sign Out']
+13:28:59.073  INFO  manager.ListenerWD - List size is  --> 1
+13:28:59.075  INFO  tests.TestBase - Tests success
+13:28:59.075  INFO  tests.TestBase - ---------------------------------------------------------------------------------
+13:28:59.076  INFO  manager.ListenerTNG - onTestSuccessregistrationSuccess
+13:28:59.078  INFO  manager.ListenerTNG - onFinish---->Nopackage

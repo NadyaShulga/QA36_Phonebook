@@ -1,0 +1,70 @@
+14:21:46.915  INFO  manager.ApplicationManager - All tests star in Chrome Browser
+14:21:48.176  INFO  manager.ApplicationManager - Current Url -->https://telranedu.web.app/home
+14:21:48.184  INFO  manager.ListenerTNG - onStart---->Gradle test
+14:21:48.213  INFO  tests.TestBase - The name of starts method is --->loginSuccess2
+14:21:48.218  INFO  manager.ListenerWD - Before find elements  --> By.xpath: //*[text()='Sign Out']
+14:21:53.256  INFO  manager.ListenerWD - After find elements  --> By.xpath: //*[text()='Sign Out']
+14:21:53.262  INFO  manager.ListenerWD - List size is  --> 0
+14:21:53.267  INFO  manager.ListenerTNG - onTestStart---->loginSuccess2
+14:21:53.270  INFO  tests.TestBase - Login with valid data: email: teddy1@gmail.com& password: Teddy1206$
+14:21:53.278  INFO  manager.ListenerWD - Before find element  --> By.cssSelector: a[href='/login']
+14:21:53.334  INFO  manager.ListenerWD - After find element  --> By.cssSelector: a[href='/login']
+14:21:53.499  INFO  manager.ListenerWD - Before find element  --> By.cssSelector: input[placeholder='Email']
+14:21:53.540  INFO  manager.ListenerWD - After find element  --> By.cssSelector: input[placeholder='Email']
+14:21:53.830  INFO  manager.ListenerWD - Before find element  --> By.cssSelector: input[placeholder='Password']
+14:21:53.862  INFO  manager.ListenerWD - After find element  --> By.cssSelector: input[placeholder='Password']
+14:21:54.058  INFO  manager.ListenerWD - Before find element  --> By.cssSelector: button[name='login']
+14:21:54.081  INFO  manager.ListenerWD - After find element  --> By.cssSelector: button[name='login']
+14:21:54.134  INFO  manager.ListenerWD - Before find elements  --> By.xpath: //*[text()='Sign Out']
+14:21:54.773  INFO  manager.ListenerWD - After find elements  --> By.xpath: //*[text()='Sign Out']
+14:21:54.773  INFO  manager.ListenerWD - List size is  --> 1
+14:21:54.775  INFO  tests.TestBase - Tests success
+14:21:54.775  INFO  tests.TestBase - ---------------------------------------------------------------------------------
+14:21:54.775  INFO  manager.ListenerTNG - onTestSuccessloginSuccess2
+14:21:54.775  INFO  tests.TestBase - The name of starts method is --->loginSuccess2
+14:21:54.775  INFO  manager.ListenerWD - Before find elements  --> By.xpath: //*[text()='Sign Out']
+14:21:54.811  INFO  manager.ListenerWD - After find elements  --> By.xpath: //*[text()='Sign Out']
+14:21:54.811  INFO  manager.ListenerWD - List size is  --> 1
+14:21:54.812  INFO  manager.ListenerWD - Before find element  --> By.xpath: //*[text()='Sign Out']
+14:21:54.830  INFO  manager.ListenerWD - After find element  --> By.xpath: //*[text()='Sign Out']
+14:21:54.878  INFO  tests.TestBase - I need logout
+14:21:54.879  INFO  manager.ListenerTNG - onTestStart---->loginSuccess2
+14:21:54.879  INFO  tests.TestBase - Login with valid data: email: sonya@gmail.com& password: Ss12345$
+14:21:54.880  INFO  manager.ListenerWD - Before find element  --> By.cssSelector: a[href='/login']
+14:21:54.897  INFO  manager.ListenerWD - After find element  --> By.cssSelector: a[href='/login']
+14:21:54.931  INFO  manager.ListenerWD - Before find element  --> By.cssSelector: input[placeholder='Email']
+14:21:54.949  INFO  manager.ListenerWD - After find element  --> By.cssSelector: input[placeholder='Email']
+14:21:55.087  INFO  manager.ListenerWD - Before find element  --> By.cssSelector: input[placeholder='Password']
+14:21:55.109  INFO  manager.ListenerWD - After find element  --> By.cssSelector: input[placeholder='Password']
+14:21:55.241  INFO  manager.ListenerWD - Before find element  --> By.cssSelector: button[name='login']
+14:21:55.259  INFO  manager.ListenerWD - After find element  --> By.cssSelector: button[name='login']
+14:21:55.303  INFO  manager.ListenerWD - Before find elements  --> By.xpath: //*[text()='Sign Out']
+14:21:55.700  INFO  manager.ListenerWD - After find elements  --> By.xpath: //*[text()='Sign Out']
+14:21:55.701  INFO  manager.ListenerWD - List size is  --> 1
+14:21:55.701  INFO  tests.TestBase - Tests success
+14:21:55.701  INFO  tests.TestBase - ---------------------------------------------------------------------------------
+14:21:55.702  INFO  manager.ListenerTNG - onTestSuccessloginSuccess2
+14:21:55.703  INFO  tests.TestBase - The name of starts method is --->loginSuccess2
+14:21:55.704  INFO  manager.ListenerWD - Before find elements  --> By.xpath: //*[text()='Sign Out']
+14:21:55.722  INFO  manager.ListenerWD - After find elements  --> By.xpath: //*[text()='Sign Out']
+14:21:55.722  INFO  manager.ListenerWD - List size is  --> 1
+14:21:55.722  INFO  manager.ListenerWD - Before find element  --> By.xpath: //*[text()='Sign Out']
+14:21:55.735  INFO  manager.ListenerWD - After find element  --> By.xpath: //*[text()='Sign Out']
+14:21:55.769  INFO  tests.TestBase - I need logout
+14:21:55.771  INFO  manager.ListenerTNG - onTestStart---->loginSuccess2
+14:21:55.772  INFO  tests.TestBase - Login with valid data: email: noa@gmail.com& password: Nnoa12345$
+14:21:55.773  INFO  manager.ListenerWD - Before find element  --> By.cssSelector: a[href='/login']
+14:21:55.790  INFO  manager.ListenerWD - After find element  --> By.cssSelector: a[href='/login']
+14:21:55.824  INFO  manager.ListenerWD - Before find element  --> By.cssSelector: input[placeholder='Email']
+14:21:55.842  INFO  manager.ListenerWD - After find element  --> By.cssSelector: input[placeholder='Email']
+14:21:56.086  INFO  manager.ListenerWD - Before find element  --> By.cssSelector: input[placeholder='Password']
+14:21:56.111  INFO  manager.ListenerWD - After find element  --> By.cssSelector: input[placeholder='Password']
+14:21:56.268  INFO  manager.ListenerWD - Before find element  --> By.cssSelector: button[name='login']
+14:21:56.285  INFO  manager.ListenerWD - After find element  --> By.cssSelector: button[name='login']
+14:21:56.336  INFO  manager.ListenerWD - Before find elements  --> By.xpath: //*[text()='Sign Out']
+14:21:56.545  INFO  manager.ListenerWD - After find elements  --> By.xpath: //*[text()='Sign Out']
+14:21:56.545  INFO  manager.ListenerWD - List size is  --> 1
+14:21:56.545  INFO  tests.TestBase - Tests success
+14:21:56.545  INFO  tests.TestBase - ---------------------------------------------------------------------------------
+14:21:56.546  INFO  manager.ListenerTNG - onTestSuccessloginSuccess2
+14:21:56.555  INFO  manager.ListenerTNG - onFinish---->Gradle test

@@ -4,6 +4,10 @@ import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.time.Duration;
 import java.util.List;
 
 
@@ -14,7 +18,8 @@ public class HelperUser extends HelperBase{
     }
 
     public void openLoginRegistrationForm(){
-        wd.findElement(By.cssSelector("a[href='/login']")).click();
+       // click(By.cssSelector("a[href='/l']"));
+        click(By.cssSelector("a[href='/login']"));
     }
     public void fillLoginRegistrationForm(User user) {
         //for email
@@ -41,18 +46,20 @@ public class HelperUser extends HelperBase{
     }
 
     public void logout() {
+
         click(By.xpath("//*[text()='Sign Out']"));
     }
 
     public boolean isErrorMessageDisplayed(String message) {
-       Alert alert = wd.switchTo().alert();
+     //  Alert alert = wd.switchTo().alert();
+       Alert alert =  new WebDriverWait(wd,Duration.ofSeconds(9)).until(ExpectedConditions.alertIsPresent());
+
+       //wd.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
        String text = alert.getText();
        System.out.println(text);
 
         //click ok
         alert.accept();
-        //click cancel   ---->  //alert.dismiss();
-        //alert.sendKeys("Hello");
 
         return text.contains(message);
     }

@@ -1,0 +1,76 @@
+15:57:09.944  INFO  manager.ApplicationManager - All tests star in Chrome Browser
+15:57:11.178  INFO  manager.ApplicationManager - Current Url -->https://telranedu.web.app/home
+15:57:11.223  INFO  tests.TestBase - The name of starts method is --->registrationSuccess
+15:57:11.225  INFO  manager.ListenerWD - Before find elements  --> By.xpath: //*[text()='Sign Out']
+15:57:16.288  INFO  manager.ListenerWD - After find elements  --> By.xpath: //*[text()='Sign Out']
+15:57:16.291  INFO  manager.ListenerWD - List size is  --> 0
+15:57:16.293  INFO  tests.TestBase - Registration with valid data: email:'dom" + i + "@gmail.com'  and password 'Tima1206$'
+15:57:16.295  INFO  manager.ListenerWD - Before find element  --> By.cssSelector: a[href='/login']
+15:57:16.321  INFO  manager.ListenerWD - After find element  --> By.cssSelector: a[href='/login']
+15:57:16.485  INFO  manager.ListenerWD - Before find element  --> By.cssSelector: input[placeholder='Email']
+15:57:16.507  INFO  manager.ListenerWD - After find element  --> By.cssSelector: input[placeholder='Email']
+15:57:16.764  INFO  manager.ListenerWD - Before find element  --> By.cssSelector: input[placeholder='Password']
+15:57:16.779  INFO  manager.ListenerWD - After find element  --> By.cssSelector: input[placeholder='Password']
+15:57:18.927  INFO  manager.ListenerWD - Before find element  --> By.cssSelector: [name='registration']
+15:57:18.959  INFO  manager.ListenerWD - After find element  --> By.cssSelector: [name='registration']
+15:57:18.997  INFO  manager.ListenerWD - Before find elements  --> By.xpath: //*[text()='Sign Out']
+15:57:19.333  INFO  manager.ListenerWD - After find elements  --> By.xpath: //*[text()='Sign Out']
+15:57:19.333  INFO  manager.ListenerWD - List size is  --> 1
+15:57:19.429  INFO  tests.TestBase - Tests success
+15:57:19.429  INFO  tests.TestBase - ---------------------------------------------------------------------------------
+15:57:19.529  INFO  tests.TestBase - The name of starts method is --->registrationUserAlreadyExists
+15:57:19.531  INFO  manager.ListenerWD - Before find elements  --> By.xpath: //*[text()='Sign Out']
+15:57:19.559  INFO  manager.ListenerWD - After find elements  --> By.xpath: //*[text()='Sign Out']
+15:57:19.560  INFO  manager.ListenerWD - List size is  --> 1
+15:57:19.560  INFO  manager.ListenerWD - Before find element  --> By.xpath: //*[text()='Sign Out']
+15:57:19.584  INFO  manager.ListenerWD - After find element  --> By.xpath: //*[text()='Sign Out']
+15:57:19.618  INFO  tests.TestBase - Registration with used data: email:'teddy1@gmail.com'  and password 'Teddy1206$'
+15:57:19.618  INFO  manager.ListenerWD - Before find element  --> By.cssSelector: a[href='/login']
+15:57:19.639  INFO  manager.ListenerWD - After find element  --> By.cssSelector: a[href='/login']
+15:57:19.671  INFO  manager.ListenerWD - Before find element  --> By.cssSelector: input[placeholder='Email']
+15:57:19.692  INFO  manager.ListenerWD - After find element  --> By.cssSelector: input[placeholder='Email']
+15:57:19.808  INFO  manager.ListenerWD - Before find element  --> By.cssSelector: input[placeholder='Password']
+15:57:19.823  INFO  manager.ListenerWD - After find element  --> By.cssSelector: input[placeholder='Password']
+15:57:19.936  INFO  manager.ListenerWD - Before find element  --> By.cssSelector: [name='registration']
+15:57:19.949  INFO  manager.ListenerWD - After find element  --> By.cssSelector: [name='registration']
+15:57:19.972  INFO  manager.ListenerWD - Before find elements  --> By.xpath: //*[text()='Sign Out']
+15:57:20.095  INFO  manager.ListenerWD - After find elements  --> By.xpath: //*[text()='Sign Out']
+15:57:20.095  INFO  manager.ListenerWD - List size is  --> 0
+15:57:20.126  INFO  tests.TestBase - Tests success
+15:57:20.126  INFO  tests.TestBase - ---------------------------------------------------------------------------------
+15:57:20.128  INFO  tests.TestBase - The name of starts method is --->registrationWrongEmail
+15:57:20.128  INFO  manager.ListenerWD - Before find elements  --> By.xpath: //*[text()='Sign Out']
+15:57:25.176  INFO  manager.ListenerWD - After find elements  --> By.xpath: //*[text()='Sign Out']
+15:57:25.176  INFO  manager.ListenerWD - List size is  --> 0
+15:57:25.176  INFO  tests.TestBase - Registration with wrong email data: email:'domgmail.com'  and password 'Tima1206$'
+15:57:25.176  INFO  manager.ListenerWD - Before find element  --> By.cssSelector: a[href='/login']
+15:57:25.192  INFO  manager.ListenerWD - After find element  --> By.cssSelector: a[href='/login']
+15:57:25.213  INFO  manager.ListenerWD - Before find element  --> By.cssSelector: input[placeholder='Email']
+15:57:25.229  INFO  manager.ListenerWD - After find element  --> By.cssSelector: input[placeholder='Email']
+15:57:25.318  INFO  manager.ListenerWD - Before find element  --> By.cssSelector: input[placeholder='Password']
+15:57:25.332  INFO  manager.ListenerWD - After find element  --> By.cssSelector: input[placeholder='Password']
+15:57:25.425  INFO  manager.ListenerWD - Before find element  --> By.cssSelector: [name='registration']
+15:57:25.437  INFO  manager.ListenerWD - After find element  --> By.cssSelector: [name='registration']
+15:57:25.458  INFO  manager.ListenerWD - Before find elements  --> By.xpath: //*[text()='Sign Out']
+15:57:25.596  INFO  manager.ListenerWD - After find elements  --> By.xpath: //*[text()='Sign Out']
+15:57:25.596  INFO  manager.ListenerWD - List size is  --> 0
+15:57:25.613  INFO  tests.TestBase - Tests success
+15:57:25.613  INFO  tests.TestBase - ---------------------------------------------------------------------------------
+15:57:25.614  INFO  tests.TestBase - The name of starts method is --->registrationWrongPassword
+15:57:25.616  INFO  manager.ListenerWD - Before find elements  --> By.xpath: //*[text()='Sign Out']
+15:57:30.648  INFO  manager.ListenerWD - After find elements  --> By.xpath: //*[text()='Sign Out']
+15:57:30.648  INFO  manager.ListenerWD - List size is  --> 0
+15:57:30.648  INFO  tests.TestBase - Registration with wrong password data: email:'dom@gmail.com'  and password 'Tim1'
+15:57:30.648  INFO  manager.ListenerWD - Before find element  --> By.cssSelector: a[href='/login']
+15:57:30.680  INFO  manager.ListenerWD - After find element  --> By.cssSelector: a[href='/login']
+15:57:30.726  INFO  manager.ListenerWD - Before find element  --> By.cssSelector: input[placeholder='Email']
+15:57:30.740  INFO  manager.ListenerWD - After find element  --> By.cssSelector: input[placeholder='Email']
+15:57:30.839  INFO  manager.ListenerWD - Before find element  --> By.cssSelector: input[placeholder='Password']
+15:57:30.849  INFO  manager.ListenerWD - After find element  --> By.cssSelector: input[placeholder='Password']
+15:57:30.933  INFO  manager.ListenerWD - Before find element  --> By.cssSelector: [name='registration']
+15:57:30.946  INFO  manager.ListenerWD - After find element  --> By.cssSelector: [name='registration']
+15:57:30.978  INFO  manager.ListenerWD - Before find elements  --> By.xpath: //*[text()='Sign Out']
+15:57:31.045  INFO  manager.ListenerWD - After find elements  --> By.xpath: //*[text()='Sign Out']
+15:57:31.045  INFO  manager.ListenerWD - List size is  --> 0
+15:57:31.075  INFO  tests.TestBase - Tests success
+15:57:31.076  INFO  tests.TestBase - ---------------------------------------------------------------------------------
