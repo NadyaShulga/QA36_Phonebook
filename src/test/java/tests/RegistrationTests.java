@@ -15,7 +15,6 @@ public class RegistrationTests extends TestBase {
     }
 
     @Test(groups = {"smoke","task"})
-    
     public void registrationSuccess() throws InterruptedException {
         logger.info("Registration with valid data: email:'dom\" + i + \"@gmail.com'  and password 'Tima1206$'");
         Random random = new Random();
